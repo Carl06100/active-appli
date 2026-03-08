@@ -1,4 +1,4 @@
-name: Gardez Streamlit éveillé
+name: Keep Streamlit Awake
 
 on:
   schedule:
@@ -10,5 +10,6 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Application Ping Streamlit
-        run: curl -L "https://medcodex-v2-3n7bazwmm37wt35cx5pvu.streamlit.app/" > /dev/null
+      - name: Ping Streamlit App
+        run: |
+          curl --max-redirs 5 -L "https://medcodex-v2-3n7bazwmm37wt35cx5pvu.streamlit.app/" > /dev/null
