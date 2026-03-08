@@ -12,4 +12,4 @@ jobs:
     steps:
       - name: Ping Streamlit App
         run: |
-          curl --max-redirs 5 -L "https://medcodex-v2-3n7bazwmm37wt35cx5pvu.streamlit.app/" > /dev/null
+          curl -L "https://medcodex-v2-3n7bazwmm37wt35cx5pvu.streamlit.app/" > /dev/null 2>&1 || true
