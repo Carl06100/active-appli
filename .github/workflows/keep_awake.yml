@@ -10,4 +10,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Ping Streamlit app
-        run: curl -L --silent --show-error --fail "https://https:/medcodex-v2-3n7bazwwmn37wt35cx5pvu.streamlit.app/" > /dev/null
+        run: curl -L --silent --show-error --fail "https://medcodex-v2-3n7bazwmm37wt35cx5pvu.streamlit.app/" > /dev/null
